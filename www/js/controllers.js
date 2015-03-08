@@ -46,7 +46,7 @@ movimetroControllers.controller('MiTarjetaRecargarController', ['$scope', '$http
       $scope.buttonTitle = 'Conectando con servidor...';
 
       $http({
-        url: 'http://192.168.43.238:8000/create_charge', 
+        url: 'http://104.236.26.231:8000/create_charge', 
         method: 'GET',
         params: {
           currency: 'MXN',
