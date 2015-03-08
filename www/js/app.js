@@ -7,6 +7,10 @@ var movimetro = angular.module('movimetro', [
 movimetro.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
+      when('/', {
+        templateUrl: 'partials/bienvenida.html',
+        controller: 'BienvenidaFotoController'
+      }).
       when('/mi-tarjeta', {
         templateUrl: 'partials/mitarjeta.html',
         controller: 'MiTarjetaController'

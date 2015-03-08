@@ -202,3 +202,7 @@ movimetroControllers.controller('EstadoServicioController', ['$scope', '$routePa
 movimetroControllers.controller('BienvenidaController', function ($scope) {
   $scope.navbarCollapsed = true;
 });
+
+movimetroControllers.controller('BienvenidaFotoController', function ($scope) {
+  
+});
