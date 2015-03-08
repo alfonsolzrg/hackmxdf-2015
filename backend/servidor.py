@@ -193,5 +193,8 @@ except KeyboardInterrupt:
 except socket.error:
     print "\nCerrando socket y finalizando"
     in_socket.close()
+    in_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    in_socket.bind(('',8000))
+    in_socket.listen(1)
     print "\nAdios!"
     sys.exit()
