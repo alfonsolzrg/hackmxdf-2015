@@ -1,0 +1,59 @@
+<div ng-controller="MiTarjetaAsociarController">
+  <h1>Transferir Crédito</h1>
+  <form novalidate class="simple-form" role="form">
+    <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <div class="input-group">
+          <span class="input-group-addon">@</span>
+          <input required="required" type="email" class="form-control" id="email" ng-model="transfer.email">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="card-name">Monto:</label>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-usd fa-fw"></i> </span>
+          <input required="required" type="text" class="form-control" id="card-name" ng-model="transfer.amount">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="card-name">Número Tarjeta Destino:</label>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-credit-card fa-fw"></i> </span>
+          <input required="required" type="text" class="form-control" id="card-name" ng-model="transfer.card_destination">
+        </div>
+    </div>
+
+    <div class="form-group text-center">
+      <button type="submit" class="btn btn-block btn-lg btn-primary" ng-click="transfer_action(transfer)">
+        <i class="fa fa-share"></i> {{ buttonTitle }}
+      </button>
+    </div>
+  </form>
+  
+  <script type="text/ng-template" id="myModalContent.html">
+      <div class="modal-header">
+          <h3 class="modal-title">Verificar</h3>
+      </div>
+      <div class="modal-body">
+          <p>Nombre: Diego Rivera</p>
+          <p>Correo: diegorivera@muralistas.com</p>
+          <p>Cantidad: <small>$</small><b>{{ transfer.amount }}</b><small>MXN</small></p>
+      </div>
+      <div class="modal-footer">
+          <button class="btn btn-primary" ng-click="ok()">OK</button>
+          <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+      </div>
+  </script>
+
+  <style type="text/css">
+    .css-form input.ng-invalid.ng-touched {
+      background-color: #FA787E;
+    }
+
+    .css-form input.ng-valid.ng-touched {
+      background-color: #78FA89;
+    }
+  </style>
+</div>

@@ -10,7 +10,7 @@
     </div>
 
     <div class="form-group">
-        <label for="creditCardNumber">Numero Tarjeta:</label>
+        <label for="creditCardNumber">Número Tarjeta:</label>
         <input type="text" class="form-control" id="creditCardNumber" ng-model="recharge.credit_card_number">
     </div>
 
@@ -19,17 +19,17 @@
         <input type="text" class="form-control" id="creditCardMonth" ng-model="recharge.credit_card_month" placeholder='MM'>
     </div>
     <div class="form-group">
-        <label for="creditCardYear">Anio</label>
+        <label for="creditCardYear">Año</label>
         <input type="text" class="form-control" id="creditCardYear" ng-model="recharge.credit_card_year" placeholder='YY'>
     </div>
     <div class="form-group">
-        <label for="creditCardCode">Codigo</label>
+        <label for="creditCardCode">Código</label>
         <input type="text" class="form-control" id="creditCardCode" ng-model="recharge.credit_card_code" placeholder='***'>
     </div>
 
     <div class="form-group text-center">
       <button type="submit" class="btn btn-block btn-lg btn-primary" ng-click="recharge_action(recharge)">
-        <i class="fa fa-usd"></i> Hacer Cargo
+        <i class="fa fa-usd"></i> {{ buttonTitle }}
       </button>
     </div>
   </form>

@@ -307,6 +307,7 @@
 /home/fed/hackmx/platforms/android/assets/www/js/app.js \
 /home/fed/hackmx/platforms/android/assets/www/partials/servicio.html \
 /home/fed/hackmx/platforms/android/assets/www/partials/mitarjeta-asociar.html \
+/home/fed/hackmx/platforms/android/assets/www/partials/mitarjeta-transferir.html \
 /home/fed/hackmx/platforms/android/assets/www/partials/mitarjeta-recargar.html \
 /home/fed/hackmx/platforms/android/assets/www/partials/mitarjeta-cambiar.html \
 /home/fed/hackmx/platforms/android/assets/www/partials/alertas.html \
