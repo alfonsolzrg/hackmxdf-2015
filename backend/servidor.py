@@ -4,10 +4,10 @@ import urls
 import sys
 from extraexceptions import NotEnoughArgsError, BadRequestError, VersionNotSupportedError, NotImplementedError
 
-socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-socket.bind(('',80))
-socket.listen(1)
-print "listening on port 80\n"
+in_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+in_socket.bind(('',8000))
+in_socket.listen(1)
+print "listening on port 8000\n"
 
 LOCATION = "www"
 NOT_FOUND_LOCATION = "www/404.html"
@@ -179,19 +179,19 @@ def parseArgs(args):
 
 try:
     while True:
-        client, address = socket.accept()
+        client, address = in_socket.accept()
         data = client.recv(4096)
         parsea(data)
         client.close()
 
 except KeyboardInterrupt:
     print "\nCerrando socket y finalizando"
-    socket.close()
+    in_socket.close()
     print "\nAdios!"
     sys.exit()
 
 except socket.error:
     print "\nCerrando socket y finalizando"
-    socket.close()
+    in_socket.close()
     print "\nAdios!"
     sys.exit()
