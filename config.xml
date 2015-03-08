@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.mm.movimetro" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>MoviMetro</name>
+    <description>
+        MoviMetro
+    </description>
+    <author email="movimetro@gmail.com" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <icon src="res/icon.png" width="57" height="57" density="mdpi" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <platform name="android">
+        <!-- you can use any density that exists in the Android project -->
+        <splash src="www/img/Bienvenida-01.png" density="land-hdpi"/>
+        <splash src="www/img/Bienvenida-01.png" density="land-ldpi"/>
+        <splash src="www/img/Bienvenida-01.png" density="land-mdpi"/>
+        <splash src="www/img/Bienvenida-01.png" density="land-xhdpi"/>
+
+        <splash src="www/img/Bienvenida-01.png" density="port-hdpi"/>
+        <splash src="www/img/Bienvenida-01.png" density="port-ldpi"/>
+        <splash src="www/img/Bienvenida-01.png" density="port-mdpi"/>
+        <splash src="www/img/Bienvenida-01.png" density="port-xhdpi"/>
+    </platform>
+</widget>

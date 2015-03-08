@@ -1,0 +1,19 @@
+/home/fed/hackmx/platforms/android/ant-build/classes.dex : \
+/home/fed/hackmx/platforms/android/ant-build/classes/com/mm/movimetro/BuildConfig.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/com/mm/movimetro/R.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/com/mm/movimetro/R$attr.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/com/mm/movimetro/R$drawable.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/com/mm/movimetro/CordovaApp.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/com/mm/movimetro/R$string.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/com/mm/movimetro/R$xml.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$7.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$6.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$5.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$4.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$2.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$6$1.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$3.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$1.class \
+/home/fed/hackmx/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen$5$1.class \
+/home/fed/hackmx/platforms/android/ant-build/dexedLibs/classes-1d1144ba5e8f3fcf9c0effc068eb9b11.jar \

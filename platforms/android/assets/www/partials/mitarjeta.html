@@ -1,0 +1,22 @@
+  <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+
+<div>
+  <i class="fa fa-credit-card fa-5x"></i>
+</div>
+<h1>{{ user.card_number }}</h1>
+<h1><small>$</small> {{ user.current_balance }} <small>MXN</small></h1>
+<h3><small>@</small> {{ user.email }}</h3>
+<h3><small><i class="fa fa-user"></i></small> {{ user.name }}</h3>
+<hr>    
+<a href="#/mi-tarjeta/recargar" class="btn btn-block btn-lg btn-success">
+  <i class="fa fa-usd fa-fw"></i> Recargar
+</a>
+<a href="#/mi-tarjeta/asociar" class="btn btn-block btn-lg btn-primary">
+  <i class="fa fa-plus fa-fw"></i> Aun no has registrado tu tarjeta? 
+</a>
+<a href="#/mi-tarjeta/cambiar" class="btn btn-block btn-lg btn-warning">
+  <i class="fa fa-exchange fa-fw"></i> Cambiar mi tarjeta
+</a>
+<a href="#/mi-tarjeta/transferir" class="btn btn-block btn-lg btn-danger">
+  <i class="fa fa-share fa-fw"></i> Transferir saldo
+</a>

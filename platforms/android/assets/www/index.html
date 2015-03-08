@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="movimetro">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="js/ui-bootstrap-tpls-0.12.1.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <title>¡Bienvenido a MoviMetro!</title>
+    </head>
+    <body ng-controller="BienvenidaController">
+        <nav class="navbar navbar-default navbar-inverse">
+            <div class="container-fluid">
+            
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" ng-init="navCollapsed = true" ng-click="navbarCollapsed = !navbarCollapsed">
+                        <span class="sr-only">Abrir Navegación</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="img/logo.png" height="20" width="20">
+                    </a>
+                    <a href="" class="navbar-brand">
+                        MoviMetro
+                    </a>
+                </div>
+
+                <div collapse="navbarCollapsed" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#/mi-tarjeta">
+                                <i class="fa fa-credit-card"></i> Mi Tarjeta <span class="sr-only">(actual)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/alertas"><i class="fa fa-bell"></i> Alertas</a>
+                        </li>
+                        <li>
+                            <a href="#/servicio"><i class="fa fa-check"></i> Estado del Servicio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div ng-view class="container text-center">
+            <img src="img/Bienvenida-01.png" width="347">
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

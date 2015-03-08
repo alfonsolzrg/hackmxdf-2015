@@ -1,0 +1,25 @@
+<div ng-controller="MiTarjetaAsociarController">
+  <h1>Cambiar Tarjeta</h1>
+  <form novalidate class="simple-form" role="form">
+    <div class="form-group">
+        <label for="card-name">Numero Tarjeta:</label>
+        <input type="text" class="form-control" id="card-name" ng-model="user.card_number">
+    </div>
+
+    <div class="form-group text-center">
+      <button type="submit" class="btn btn-block btn-lg btn-primary" ng-click="check(user)">
+        <i class="fa fa-floppy-o"></i> Guardar
+      </button>
+    </div>
+  </form>
+  
+  <style type="text/css">
+    .css-form input.ng-invalid.ng-touched {
+      background-color: #FA787E;
+    }
+
+    .css-form input.ng-valid.ng-touched {
+      background-color: #78FA89;
+    }
+  </style>
+</div>

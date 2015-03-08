@@ -1,0 +1,46 @@
+<div ng-controller="MiTarjetaAsociarController">
+  <h1>Recargar</h1>
+  <form novalidate class="simple-form" role="form">
+    <div class="form-group">
+        <label for="amount">Monto:</label>
+        <div class="input-group">
+          <span class="input-group-addon"><i class="fa fa-usd"></i> </span>
+          <input type="text" class="form-control" id="amount" ng-model="recharge.amount">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="creditCardNumber">Numero Tarjeta:</label>
+        <input type="text" class="form-control" id="creditCardNumber" ng-model="recharge.credit_card_number">
+    </div>
+
+    <div class="form-group">
+        <label for="creditCardMonth">Mes</label>
+        <input type="text" class="form-control" id="creditCardMonth" ng-model="recharge.credit_card_month" placeholder='MM'>
+    </div>
+    <div class="form-group">
+        <label for="creditCardYear">Anio</label>
+        <input type="text" class="form-control" id="creditCardYear" ng-model="recharge.credit_card_year" placeholder='YY'>
+    </div>
+    <div class="form-group">
+        <label for="creditCardCode">Codigo</label>
+        <input type="text" class="form-control" id="creditCardCode" ng-model="recharge.credit_card_code" placeholder='***'>
+    </div>
+
+    <div class="form-group text-center">
+      <button type="submit" class="btn btn-block btn-lg btn-primary" ng-click="recharge_action(recharge)">
+        <i class="fa fa-usd"></i> Hacer Cargo
+      </button>
+    </div>
+  </form>
+  
+  <style type="text/css">
+    .css-form input.ng-invalid.ng-touched {
+      background-color: #FA787E;
+    }
+
+    .css-form input.ng-valid.ng-touched {
+      background-color: #78FA89;
+    }
+  </style>
+</div>
