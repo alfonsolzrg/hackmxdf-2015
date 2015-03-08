@@ -5,9 +5,9 @@ import sys
 from extraexceptions import NotEnoughArgsError, BadRequestError, VersionNotSupportedError, NotImplementedError
 
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-socket.bind(('',8000))
+socket.bind(('',80))
 socket.listen(1)
-print "listening on 8000\n"
+print "listening on port 80\n"
 
 LOCATION = "www"
 NOT_FOUND_LOCATION = "www/404.html"
@@ -185,6 +185,12 @@ try:
         client.close()
 
 except KeyboardInterrupt:
+    print "\nCerrando socket y finalizando"
+    socket.close()
+    print "\nAdios!"
+    sys.exit()
+
+except socket.error:
     print "\nCerrando socket y finalizando"
     socket.close()
     print "\nAdios!"
